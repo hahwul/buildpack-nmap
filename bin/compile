@@ -26,4 +26,7 @@ fi
 
 mkdir -p "$BUILD_PATH"/"$BUILDPACK_PREFIX"/bin
 cp "$CACHE_PATH"/"$BUILDPACK_PREFIX"/"$NMAP_NAME"/bin/* "$BUILD_PATH"/"$BUILDPACK_PREFIX"/bin
-export PATH=/app/nmap/bin
+#export PATH=/app/nmap/bin
+
+cp "$CACHE_PATH"/"$BUILDPACK_PREFIX"/"$NMAP_NAME"/bin/* "$BUILD_PATH"/vendor/bundle/bin
+
